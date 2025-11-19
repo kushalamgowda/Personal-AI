@@ -41,18 +41,18 @@ Personal-AI/
 - Create a `.env` file:
 
 
-npm start
+      npm start
 
 Backend should show:  
 `Server running on http://localhost:3001`
 
 ### 3. Frontend Setup
 
-cd frontend
+    cd frontend
 
-npm install
+    npm install
 
-npm start
+    npm start
 
 - Visit `http://localhost:3000` in your browser.
 
