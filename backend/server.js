@@ -1,5 +1,3 @@
-
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const { OpenAI } = require('openai');
@@ -10,7 +8,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-// Correct usage for OpenAI SDK v4+
+// Correct usage for OpenAI SDK v4+:
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
@@ -19,7 +17,6 @@ app.post('/api/chat', async (req, res) => {
   const userMessage = req.body.message;
 
   try {
-    // SDK v4+ method
     const completion = await openai.chat.completions.create({
       model: "gpt-4",
       messages: [
